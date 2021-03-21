@@ -4,7 +4,7 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-      time: "00:15"
+      time: "00:05"
     labels:
       - "Automatic"
     open-pull-requests-limit: 99
