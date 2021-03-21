@@ -1,0 +1,15 @@
+name: ASF-auto-merge
+
+on:
+  pull_request_target:
+
+jobs:
+  auto-merge:
+    if: github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Auto-merge PR if deemed appropriate
+        uses: JustArchi/action-dependabot-auto-merge@issue-25
+        with:
+          github-token: ${{ secrets.PERSONAL_TEST }}
+          target: digest

@@ -1,0 +1,3 @@
+[submodule "protoc"]
+	path = protoc
+	url = https://github.com/JustArchiNET/protoc
