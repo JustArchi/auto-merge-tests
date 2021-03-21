@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Auto-merge PR if deemed appropriate
-        uses: JustArchi/action-dependabot-auto-merge@issue-25
+        uses: JustArchi/action-dependabot-auto-merge@24c89abc11953af26fe32a1e5640d3ad80352016
         with:
           github-token: ${{ secrets.PERSONAL_TEST }}
           target: digest
